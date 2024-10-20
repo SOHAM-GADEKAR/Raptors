@@ -262,18 +262,18 @@ nav ul li a:hover {
   }
   
   .logo1 {
-    width: 100px; /* Adjust as necessary */
+    width: 100px; 
     margin: 30px;
     border-radius: 30%;
   }
   
   .institution-text h1 {
-    font-size: 33px; /* Adjust size as needed */
+    font-size: 33px;
     
   }
 
   .institution-text p {
-    font-size: 20px; /* Adjust size as needed */
+    font-size: 20px;
     margin-bottom: 5px;
   }
   
@@ -306,7 +306,7 @@ nav ul li a:hover {
   
   .social-links a:hover,
   .other-links a:hover {
-    color: #BBBBBB; /* Light grey for hover */
+    color: #BBBBBB; 
   }
   
   .copyright {
@@ -320,8 +320,6 @@ nav ul li a:hover {
     font-size: 0.995rem;
   }
 
-  
-  /* Responsive adjustments */
   @media (max-width: 768px) {
     .footer-content {
       flex-direction: column;
