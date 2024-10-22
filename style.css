@@ -156,6 +156,7 @@ nav ul li a:hover {
 
 .lower-text h1,
 .upper-text h1 {
+  font-style: italic;
   font-size: 2.2rem;
   color: #000000;
   text-align: center;

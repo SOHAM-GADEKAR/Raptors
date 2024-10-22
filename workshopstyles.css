@@ -1,0 +1,499 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  padding: 5px 5%;
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  z-index: 1;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+nav .logo img {
+  height: 60px;
+  width: 60px;
+  border-radius: 30%;
+  margin-right: 10px;
+}
+nav .logo h1 {
+  font-size: 1.7rem;
+  color: #ffffff;
+  margin: 23px 0px;
+  margin-left: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin-left: 1.5rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 120%;
+  font-weight: 400;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #f5f5f5;
+  color: black;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 1px;
+  background-color: #ffffff;
+  display: block;
+  margin: 7px auto;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger-active {
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.6s;
+  transform: rotate(45deg);
+}
+
+.hamburger-active .line:nth-child(2) {
+  width: 0px;
+}
+
+.hamburger-active .line:nth-child(1),
+.hamburger-active .line:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.hamburger-active .line:nth-child(1) {
+  transform: translateY(12px);
+}
+
+.hamburger-active .line:nth-child(3) {
+  transform: translateY(-5px) rotate(90deg);
+}
+
+.menubar {
+  position: absolute;
+  top: 0;
+  left: -60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%;
+  height: 100vh;
+  padding: 20% 0;
+  background: rgb(0, 0, 0);
+  transition: all 0.5s ease-in;
+  z-index: 2;
+}
+.active {
+  left: 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.menubar ul {
+  padding: 0;
+  list-style: none;
+}
+.menubar ul li {
+  margin-bottom: 32px;
+}
+
+.menubar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 120%;
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.menubar ul li a:hover {
+  background-color: #f5f5f5;
+  color: black;
+}
+@media screen and (max-width: 790px) {
+  .hamburger {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+}
+
+
+
+.upper-text h1 {
+  font-style: italic;
+  font-size: 2.2rem;
+  color: #000000;
+  text-align: center;
+  margin: 19px;
+  justify-content: center;
+  align-items: center;
+}
+.middle-photo {
+  width: 100%;
+  height: 500px;
+}
+
+.middle-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Arduino{
+  background-color: rgb(59, 59, 59);
+  
+  display: flex;
+  padding: 3px 3%;
+  justify-content: space-evenly;
+  
+}
+
+.Arduino h1{
+  font-size: 2.9rem;
+  color: #ffffff;
+  text-align:center;
+}
+.h1A{
+  width: 50%;
+  
+}
+.Apic{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Arduino p{
+  font-size: 1.3rem;
+  color: #ffffff;
+  text-align: justify;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .Arduino img{
+    height: 444px;
+    width: 320px;
+    padding-top: 9px;
+  }
+  .Open_cv{
+    background-color: #ffffff;
+  
+    display: flex;
+    padding: 3px 3%;
+    justify-content: space-evenly;
+   }
+   
+   .Open_cv h1{
+    font-size: 2.9rem;
+    color:black;
+    text-align:center;
+   }
+   
+   .Open_cv p{
+    font-size: 1.3rem;
+    color: black;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     }
+     
+     .Open_cv img{
+      height: 444px;
+      width: 320px;
+      padding-top: 9px;
+     }
+     .CVpic{
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+     }
+     .CVh1{
+      width: 50%;
+     }
+     .PCB{
+      background-color:  rgb(59, 59, 59);
+      
+      display: flex;
+      padding: 3px 3%;
+      justify-content: space-evenly;
+      
+    }
+    
+    .PCB h1{
+      font-size: 2.9rem;
+      color: #ffffff;
+      text-align:center;
+    }
+    .Pcb_h1{
+      width: 50%;
+      
+    }
+    .pcbpic{
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .PCB p{
+      font-size: 1.3rem;
+      color: #ffffff;
+      text-align: justify;
+     
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+      
+      .PCB img{
+        height: 444px;
+        width: 320px;
+        padding-top: 9px;
+      }
+      .ROS{
+        background-color: #ffffff;
+      
+        display: flex;
+        padding: 3px 3%;
+        justify-content: space-evenly;
+       }
+       
+       .ROS h1{
+        font-size: 2.9rem;
+        color:black;
+        text-align:center;
+       }
+       
+       .ROS p{
+        font-size: 1.3rem;
+        color: black;
+        text-align: justify;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         }
+         
+         .ROS img{
+          height: 444px;
+          width: 320px;
+          padding-top: 9px;
+         }
+         .ROSpic{
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+    
+         }
+         .ROSh1{
+          width: 50%;
+         }
+         .CAD{
+          background-color:  rgb(59, 59, 59);
+          
+          display: flex;
+          padding: 3px 3%;
+          justify-content: space-evenly;
+          
+        }
+        
+        .CAD h1{
+          font-size: 2.9rem;
+          color: #ffffff;
+          text-align:center;
+        }
+        .CADh1{
+          width: 50%;
+          
+        }
+        .CADpic{
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .CAD p{
+          font-size: 1.3rem;
+          color: #ffffff;
+          text-align: justify;
+         
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          }
+          
+          .CAD img{
+            height: 444px;
+            width: 320px;
+            padding-top: 9px;
+          }
+          .pi{
+            background-color: #ffffff;
+          
+            display: flex;
+            padding: 3px 3%;
+            justify-content: space-evenly;
+           }
+           
+           .pi h1{
+            font-size: 2.9rem;
+            color:black;
+            text-align:center;
+           }
+           
+           .pi p{
+            font-size: 1.3rem;
+            color: black;
+            text-align: justify;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             }
+             
+             .pi img{
+              height: 444px;
+              width: 320px;
+              padding-top: 9px;
+             }
+             .pipic{
+              width: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+        
+             }
+             .pih1{
+              width: 50%;
+             }
+             .footer {
+              background-color: #000000;
+              color: white;
+              font-family: Arial, sans-serif;
+            }
+          
+            .footer-content {
+              display: flex;
+              padding: 63px 5%;
+              align-items: center;
+              justify-content: space-around;
+            }
+          
+            .logo-text {
+              display: flex;
+              align-items: center;
+            }
+          
+            .logo1 {
+              width: 100px; /* Adjust as necessary */
+              margin: 30px;
+              border-radius: 30%;
+            }
+          
+            .institution-text h1 {
+              font-size: 33px; /* Adjust size as needed */
+          
+            }
+          
+            .institution-text p {
+              font-size: 20px; /* Adjust size as needed */
+              margin-bottom: 5px;
+            }
+          
+            .social-links h2,
+            .other-links h2 {
+              font-size: 1.8rem;
+              margin-bottom: 10px;
+          
+            }
+          
+            .social-links ul, .other-links ul {
+              padding: 10px 0px;
+              list-style-type: none;
+            }
+          
+           .social-links li,
+            .other-links li {
+              font-size: 18px;
+              list-style-type: none;
+              padding: 10px 10px;
+          
+            } 
+          
+            .social-links a,
+            .other-links a {
+              color: white;
+              transition: color 0.3s ease;
+              text-decoration: none;
+            }
+          
+            .social-links a:hover,
+            .other-links a:hover {
+              color: #BBBBBB; /* Light grey for hover */
+            }
+          
+  .copyright {
+    background-color: rgb(35, 33, 33);
+    text-align: center;
+    padding: 12px;
+  }
+
+  .copyright p {
+    color: white;
+    font-size: 0.995rem;
+  }
+  @media screen and (max-width: 790px) {
+
+.Arduino {
+    background-color: rgb(59, 59, 59);
+    display: flex;
+    padding: 3px 3%;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.Apic {
+  /* width: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 24px;
+}
+     
+ }
+  
+
